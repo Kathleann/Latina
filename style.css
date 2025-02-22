@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(98, 11, 11);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(146, 5, 5);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.header-title {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+}
+
+.img-2 {
+    border-radius: 60%;
+    height: 68px;
+    width: 65px;
+    margin: 2px;
+}
+
+
+.img-1 {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 2%;
+    border: 2px solid wheat;
+}
+
+.content-1 {
+    margin-left: 190px;
+    color: whitesmoke;
+}
+
+.gan {
+    font-family: "Merriweather", serif;
+}
+
+.felx {
+    display: flex;
+}
+
+.article-1 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    justify-content: center;
+    /* Dorong navbar ke kanan */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Efek transparan */
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        /* Header jadi bertumpuk di layar kecil */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
